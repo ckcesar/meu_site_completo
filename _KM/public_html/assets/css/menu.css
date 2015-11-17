@@ -1,0 +1,45 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+    width: 250px;
+    position: fixed;
+}
+
+.mainmenu, .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainmenu a {
+    display: block;
+    background-color: #34495e;
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.mainmenu a:hover {
+    background-color: #abc4df;
+}
+
+.mainmenu li:hover .submenu {
+    display: block;
+    max-height: 200px;
+}
+
+.submenu a {
+    background-color: #999;
+}
+
+.submenu a:hover {
+    background-color: #abc4df;
+}
+
+.submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+}

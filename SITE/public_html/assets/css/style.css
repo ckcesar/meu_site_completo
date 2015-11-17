@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    font-family: Verdana;
+}
+
+
+.conteiner{
+    border: 0px solid;
+    margin: -33px auto;
+}
+
+.sobre_mim{
+    border: 0px solid;
+    margin: 63px auto;
+    background: #ffffff;
+}
+
+.descricao_sobre_mim{
+
+}
+
+.titulo_telas{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.texto_telas{
+    font-size: 16px;    
+    font-weight: normal;
+    width: 42%;
+    padding: 1%;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.curriculo{
+   margin: 2% auto; 
+}
+
+.bloco_curriculo{
+    background: #004560;
+    color: #ffffff;
+}
+
+.pdf_curriculo{
+    border:0px solid;
+    width: 41%;
+    margin: 0 auto; 
+    padding: 1% 0%;
+}
+
+.link_pdf{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.link_pdf:hover{
+    text-decoration: underline;
+}
+
+.bloco_passatempo{
+    margin: 1.7% auto;
+    background: #ffb000;
+    color: #ffffff;
+    height: 512px;
+}
+
+.titulo_telas_contato{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.form{
+    border: 0px solid;
+    max-width: 780px;
+    margin: 0 auto;
+
+}
+
+.inicio_lista_form{
+    border: 0px solid;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.lista_form{
+    border: 0px solid;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    list-style: outside none none;
+    width: 189px;
+    margin: 6px 4px;
+}
+
+.inputs{
+    padding: 3%;
+}
+
+.botao_cadastrar{
+    background: #ffffff;
+    height: 33px;
+    color: #000000;
+    border-radius: 6px;
+    border: 1px solid #8194aa;
+    cursor: pointer;
+}
+
+.botao_cadastrar:hover{
+    background: #95a5a6;
+    color: #ffffff;
+}
+
+.lista_form_textarea{
+    border: 0px solid;
+    *zoom: 1;
+    *display: inline;
+    list-style: outside none none;
+    margin: 6px 4px;
+}
+
+.bloco_noticias{
+    margin: -4% auto;
+    background: #ffb000;
+    color: #000000;
+}
+
+.listar_noticias{
+    border: 0px solid;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.li_noticias{
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    list-style: outside none none;
+    width: 233px;
+    height: 240px;
+    margin: 6px 12px;
+    cursor: pointer;
+}
+
+.todas_noticias_ph{
+    color: #000000;
+    margin: 0px 23px;
+}
+
+.bloco_noticia{
+    color: #000000;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.descricao_noticia{
+    border: 0px solid;
+    margin: 20px;
+    text-align: justify;
+}
+
+.bloco_galeria{
+    border: 0px solid;
+}
+
+.imagem_ul{
+    border: 0px solid;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.imagem_li{
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    list-style: outside none none;
+    width: 250px;
+    width: 205px;
+    height: 175px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+}
+
+.todas_noticias{
+    border: 0px solid;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.todas_noticias_li{
+    display: inline-block;
+    list-style: outside none none;
+    width: 100%;
+    height: 18px;
+    cursor: pointer;
+    border-top: 2px solid #CCC;
+    padding: 16px;
+    margin: 0 -32px;
+}
+
+.todas_noticias_li:hover{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1920px) {
+    .banner{
+      height: 504px;
+    }
+
+    .sobre_mim{
+        margin: 76px;
+    }
+
+}  
+@media screen and (max-width: 1382px) {
+    .banner{
+        height: 400px;
+    }
+    .nome_site{
+       font-size: 22px; 
+       margin: 10% auto;
+    }
+    .conteiner{
+        margin: -22px auto;
+    }
+    .texto_telas{
+        font-size:20px;
+        width: 68%;
+    }
+    .pdf_curriculo{
+       font-size:20px;
+       width: 68%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .nome_site{
+       font-size: 22px;
+       width: 46%;
+    }
+    .conteiner{
+        margin: -35px auto;
+    }
+    .texto_telas{
+        font-size:20px;
+        width: 68%;
+    }
+    .curriculo{
+        margin: 4% auto;
+    }
+
+    .bloco_curriculo{
+        height: 210px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nome_site{
+       font-size: 18px;
+       width: 46%;
+    }
+    .texto_telas{
+        font-size:20px;
+        width: 75%;
+    }
+    .curriculo{
+        margin: 5% auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .banner{
+       height: 280px;
+    }
+    .nome_site{
+       font-size: 18px;
+       width: 58%;
+       margin: 11% 27%;
+    }
+    .conteiner{
+        margin: -28px auto;
+    }
+    .texto_telas{
+        font-size:20px;
+        width: 90%;
+    }
+    .pdf_curriculo{
+       font-size:20px;
+       width: 87%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .banner{
+        /*height: 111px;*/
+        margin: 7% 0px;
+    }
+    .nome_site{
+      font-size: 14px;
+      width: 57%;
+      margin: 17% 27%; 
+    }
+    .texto_telas{
+        font-size:20px;
+        width: 90%;
+    }
+    .curriculo{
+        margin: 5% auto;
+    }
+    .pdf_curriculo{
+       font-size:20px;
+       width: 87%;
+    }
+}
+@media screen and (max-width: 360px) {
+    .banner{
+        /*height: 84px;*/
+        margin: 10% 0px;
+    }
+    .nome_site{
+        font-size: 14px;
+        width: 76%;
+        margin: 22% 20%;        
+    }
+    .texto_telas{
+        font-size:20px;
+        width: 90%;
+    }
+    .curriculo{
+        margin: 8% auto;
+    }
+    .pdf_curriculo{
+       font-size:20px;
+       width: 87%;
+    }
+
+
+}
+@media screen and (max-width: 320px) {
+    .banner{
+        /*height: 72px;*/
+        margin: 11% 0px;
+    }
+    .nome_site{
+        font-size: 12px;
+        width: 77%;
+        margin: 25% 18%;
+    }
+    .texto_telas{
+        font-size:20px;
+        width: 90%;
+    }
+    .curriculo{
+        margin: 9% auto;
+    }
+    .li_noticias{
+        width: 200px;
+    }
+
+}

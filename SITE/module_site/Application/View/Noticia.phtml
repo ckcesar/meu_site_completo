@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="Pt-BR">
+
+    <head>
+
+        <title>César Augusto</title>
+
+        
+
+        <meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, user-scalable=no" >
+
+        <link rel="shortcut icon" href="/assets/img/logo.ico" type="image/x-icon" />
+
+        
+
+        <?php include('includes/head.php'); ?>
+
+        
+
+        <script>
+
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+
+            ga('create', 'UA-60881501-1', 'auto');
+
+            ga('send', 'pageview');
+
+
+
+        </script>
+
+        
+
+    </head>
+
+    <body>
+
+
+
+        <header>
+
+
+
+          <input type="checkbox" id="control-nav" />
+
+          <label for="control-nav" class="control-nav"></label>
+
+          <label for="control-nav" class="control-nav-close"></label>
+
+
+
+          <nav class="float-r">
+
+            <div class="menu">
+
+                <ul class="list-auto">
+
+                  <li class="itens_menu">
+
+                      <a href="home" >Inicio</a>
+
+                  </li>
+
+                    <li class="itens_menu">
+
+                        <a id="mn-noticias" class="mn-item" href="#noticias" >Notícias</a>
+
+                    </li>
+
+                  <li class="itens_menu">
+
+                    <a id="mn-sobremim" class="mn-item" href="#sobremim" >Sobre mim</a>
+
+                  </li>
+
+                  <li class="itens_menu">
+
+                    <a id="mn-curriculo" class="mn-item" href="#curriculo" >Currículo</a>
+
+                  </li>
+
+                  <li class="itens_menu">
+
+                    <a id="mn-contato" class="mn-item" href="#contato"  >Contato</a>
+
+                  </li>
+
+                </ul>
+
+            </div>
+
+          </nav>
+
+        </header>
+
+
+         <?php
+            foreach($view_listar_banner as $banner): ?>
+                <div class="banner" style="background: url('<?php echo URL_BANNER .$banner->url; ?>') no-repeat center center; background-size: cover; overflow: auto; margin: 2.4% 0px;">
+
+                </div>
+         <?php endforeach; ?>
+
+
+         <div class="bloco_noticia">
+             <center>
+                 <?php
+                     foreach($view_lista_noticia as $noticia_titulo){
+                         echo"<p style='font-size: 12px;'>Data: $noticia_titulo->data_mostrar</p>";
+                         echo"<h2 class='titulo_telas'><i>$noticia_titulo->titulo</i></h2>";
+                         echo"<p style='margin: 20px;'>$noticia_titulo->sub_titulo</p>";
+                     }
+                 ?>
+
+             </center>
+                 <div class="descricao_noticia">
+
+                     <?php
+                        foreach($view_lista_noticia as $noticia){
+                            echo $noticia->descricao;
+                        }
+                     ?>
+
+                 </div>
+                 <div class="bloco_galeria">
+
+                     <ul class="imagem_ul">
+                 <?php
+                     $imagem_noticia =  $view_listar_foto_noticia->listar_fotos($noticia->id_noticias);
+
+                     foreach($imagem_noticia as $img_noticia):
+
+                       if($img_noticia->url){ ?>
+
+                                   <a href="<?php echo URL_NOTICIA .$img_noticia->url; ?>" rel="lightbox[plants]" title="<?php echo $img_noticia->titulo; ?>" >
+                                       <li class="imagem_li" style="background: url('<?php echo URL_NOTICIA .$img_noticia->url; ?>') no-repeat center center; background-size: cover; overflow: auto; margin: 3.4% 0px;">
+
+                                       </li>
+                                   </a>
+
+                 <?php } endforeach; ?>
+
+
+                     </ul>
+
+                 </div>
+
+
+
+
+
+
+         </div>
+
+    </body>
+
+
+
+</html>
